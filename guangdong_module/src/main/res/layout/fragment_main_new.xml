@@ -1,0 +1,181 @@
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_common"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_my">
+                    <!--复用布局-->
+                    <include
+                        android:id="@+id/lo_header"
+                        layout="@layout/main_reserviors_layout" />
+                </FrameLayout>
+
+                <TextView
+
+                    android:id="@+id/wuTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_my"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="当前无天气预警"
+                    android:textColor="@color/color_l"
+
+                    android:textSize="14sp" />
+
+                <LinearLayout
+
+                    android:id="@+id/tianqiLy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_my"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/tianqiOfpicIv"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/tianqiTimeTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="--"
+                            android:textColor="@color/textcommon"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tianqiTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:text="--"
+                            android:textColor="@color/color_red"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tishiTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="请巡查人员注意工程运行状态及工作安全！"
+                            android:textColor="@color/textcommon"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/currentTimeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/textcommon"
+                    android:textSize="12sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <include
+                        android:id="@+id/layoutWaterlevel"
+                        layout="@layout/layout_waterlevel_new"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <View
+                        android:background="@color/background_common_1"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <include
+                            android:id="@+id/layoutRain"
+                            layout="@layout/layout_rain_new"
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="0dp"
+                            android:layout_weight="1.5" />
+
+                        <View
+                            android:background="@color/background_common_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"/>
+
+                        <include
+                            android:id="@+id/layoutImg"
+                            layout="@layout/layout_image_new"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="0dp"
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/layoutRoute"
+
+                    layout="@layout/layout_route_new"
+
+                    />
+
+                <include
+                    android:id="@+id/layoutSpecial"
+                    layout="@layout/layout_special_notification_new"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+</layout>

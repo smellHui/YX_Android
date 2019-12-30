@@ -1,0 +1,2 @@
+include ':app', ':arcgismap', ':base', ':picktime', ':photopicker', ':dahemodule', ':guangdong_module', ':gaodelibrary'
+rootProject.name='YX_Android'

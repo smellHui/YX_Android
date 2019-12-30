@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/ry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_inspection_name"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="-- "
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:id="@+id/gaojinFl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_inspection_name"
+            android:layout_toRightOf="@+id/tv_inspection_name">
+
+            <ImageView
+                android:id="@+id/iv_alarm_2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+
+                android:src="@drawable/ksxc_icon_alarm_2" />
+
+            <ImageView
+                android:id="@+id/iv_alarm_1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="4dp"
+                android:layout_toEndOf="@+id/tv_inspection_name"
+                android:layout_toRightOf="@+id/tv_inspection_name"
+                android:src="@drawable/ksxc_icon_normalalarm_1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/erroFy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/gaojinFl"
+            android:layout_toRightOf="@+id/gaojinFl">
+
+            <ImageView
+                android:id="@+id/normalIv"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ksxc_icon_normal" />
+
+            <ImageView
+                android:id="@+id/errorIv"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="8dp"
+
+                android:src="@drawable/ksxc_icon_special" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/lastExcuteDateTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/erroFy"
+            android:layout_toRightOf="@+id/erroFy"
+            android:gravity="center|left"
+            android:padding="5dp"
+            android:text="--" />
+
+        <TextView
+            android:id="@+id/completeStatusTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/erroFy"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_toEndOf="@+id/tv_inspection_describe"
+            android:layout_toRightOf="@+id/tv_inspection_describe"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="--" />
+
+
+        <TextView
+            android:id="@+id/tv_inspection_describe"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_inspection_name"
+            android:layout_marginTop="2dp"
+            android:text="--"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_inspection_date"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_inspection_describe"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg_inspection_date"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="--"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="#1485E9"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+
+        android:layout_below="@+id/ry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/normalBtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_inspection_status_normal"
+                android:text="正常"
+                android:textColor="@color/white_my"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/bt_abnormal"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/bg_inspection_status_faxianyichang"
+                android:text="异常"
+                android:textColor="@color/white_my"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/hasNormalBtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/bg_inspection_status_normal"
+                android:text="已正常"
+                android:textColor="@color/white_my"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/stillAbBtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/bg_inspection_status_abnormal"
+                android:text="仍异常"
+                android:textColor="@color/white_my"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/faxianyichangBtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/bg_inspection_status_faxianyichang"
+                android:text="发现异常"
+                android:textColor="@color/white_my"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/querenNormalBtn"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/bg_inspection_status_normal"
+                android:text="确认正常"
+                android:textColor="@color/white_my"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#DDDDDD" />
+</RelativeLayout>

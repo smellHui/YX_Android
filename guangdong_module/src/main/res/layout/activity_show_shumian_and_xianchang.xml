@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_common"
+        android:orientation="vertical"
+        tools:context=".view.amainguangdong.ShowShumianAndXIanchangActivity">
+
+        <include layout="@layout/toolbar" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="核查工作"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/shumianLV"
+
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_shuandmian"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_my"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="书面核查"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/shumianTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="已完成"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/xianchangLV"
+
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/height_shuandmian"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@color/white_my"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="现场核查"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/xianchangTV"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="继续核查"
+                            android:textColor="@color/checkColor"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="治理建议"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+                <RadioGroup
+                    android:id="@+id/shenRg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal">
+
+                    <!-- <LinearLayout
+                         android:orientation="horizontal"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"></LinearLayout>
+
+                     <LinearLayout
+                         android:orientation="horizontal"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"></LinearLayout>-->
+                    <RadioButton
+                        android:id="@+id/radio_chuxian"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="true"
+                        android:text="--"
+                        android:textSize="@dimen/radiosize" />
+
+                    <RadioButton
+                        android:id="@+id/radio_weixiu"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="--"
+                        android:textSize="@dimen/radiosize" />
+
+                    <RadioButton
+                        android:id="@+id/radio_jiangdeng"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="--"
+                        android:textSize="@dimen/radiosize" />
+
+                    <RadioButton
+                        android:id="@+id/radio_baofei"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:checked="false"
+                        android:text="--"
+                        android:textSize="@dimen/radiosize" />
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="说明"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:padding="10dp"
+                        android:layout_height="160dp"
+                        android:background="@color/white_my">
+                        <TextView
+                            android:id="@+id/tv_Content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white_my"
+                            android:scrollbars="vertical"
+                            android:text="--"
+                            android:textColor="#000000"
+                            android:textIsSelectable="true"
+                            android:textSize="16sp" />
+
+                    </android.support.v4.widget.NestedScrollView>
+
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:drawableLeft="@drawable/jianyiyuanyin"
+                    android:drawablePadding="5dp"
+                    android:text="建议原因"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/white_my">
+                    <EditText
+                        android:id="@+id/yuanyinTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@color/white_my"
+                        android:gravity="top|left"
+                        android:hint="@string/hint1"
+                        android:padding="10dp"
+                        android:scrollbars="vertical" />
+                </android.support.v4.widget.NestedScrollView>
+
+                <LinearLayout
+
+                    android:id="@+id/qianmingLv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="核查人员签字"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="(限定三个签名)"
+                            android:textColor="#000000"
+                            android:textSize="16sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_sign"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+
+                        <ImageView
+                            android:visibility="visible"
+                            android:id="@+id/qianmingIv"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/icon_add_photo" />
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="上报状态："
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/res_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="--"
+                        android:textColor="@color/color_load_red"
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+
+                <Button
+                    android:id="@+id/xiugaiBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:background="@drawable/bg_bt_start_yunwei"
+                    android:gravity="center"
+                    android:text="修      改"
+                    android:textColor="@color/white_my"
+                    android:textSize="@dimen/sp_l" />
+
+
+                <include
+                    android:id="@+id/common_save"
+                    layout="@layout/common_save_layout" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </LinearLayout>
+
+</layout>

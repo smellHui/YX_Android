@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.ReserviorSearchListActivity">
+
+        <include layout="@layout/toolbar" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/background_color"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/jianjie_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="水库信息"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="名称"
+                android:textColor="#5F6166"
+                android:textSize="18dp" />
+
+            <EditText
+                android:paddingLeft="10dp"
+                android:id="@+id/nameTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+
+                android:background="@drawable/bg_text_date_time"
+                android:gravity="center|left"
+                android:hint="请输入水库名称"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="级别"
+                android:textColor="#5F6166"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/levelTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/bg_text_date_time"
+                android:drawableRight="@mipmap/icon_arrow_down"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="地区"
+                android:textColor="#5F6166"
+                android:textSize="18dp" />
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/areaTv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="4"
+
+                android:background="@drawable/bg_text_date_time"
+                android:gravity="center|left"
+                android:hint="请输入地区名称"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:text="级别"
+                android:textColor="#5F6166"
+                android:textSize="18dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/searchBtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:background="@drawable/bg_bt_start_yunwei"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="查询"
+                android:textColor="@color/white_my"
+                android:textSize="16dp"
+                android:visibility="visible" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tongjiTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="共管理水库--座，其中小(1)型--座，小(2)型--座，其中--座超汛限运行"
+            android:textColor="#5F6166"
+            android:textSize="14dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/reservoir_list_layout" />
+
+            <android.support.v7.widget.RecyclerView
+                android:scrollbars="vertical"
+                android:id="@+id/tongjiRec"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <!--复用布局-->
+        <include
+            android:id="@+id/lo_header"
+            layout="@layout/common_qiehuan_reserviors_layout" />
+<!--
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/baseBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本机巡查记录"
+                />
+
+            <Button
+                android:id="@+id/quanbuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已上报巡查记录"
+                />
+
+
+
+
+        </LinearLayout>-->
+
+        <LinearLayout
+            android:id="@+id/linela_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            >
+
+            <Button
+                android:id="@+id/baseBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button_left_checked"
+                android:scaleType="fitXY"
+                android:text="我的巡查记录"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/quanbuBtn"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/switch_button_right"
+                android:scaleType="fitXY"
+                android:text="全部巡查记录"
+                android:gravity="center"
+                android:textColor="@color/net_color_solidleft"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/timecommonLayout"
+            layout="@layout/time_common_layout"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_worker_item"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/lo_patrol_workorder_list_header"
+                layout="@layout/lo_patrol_workorder_list" />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_work_order_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRlOfNet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_work_order_list_ofnet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp" />
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

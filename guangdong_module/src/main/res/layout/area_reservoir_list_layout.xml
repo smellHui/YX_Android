@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootLy"
+        android:background="@drawable/bg_worker_item_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/areaTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="乡镇"
+            android:maxLines="2"
+            android:textColor="#434952"
+            android:textSize="12dp" />
+
+
+
+        <TextView
+            android:id="@+id/allCountTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="水库数量"
+            android:textColor="#434952"
+            android:textSize="12dp" />
+
+
+        <TextView
+            android:id="@+id/monitorCountTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="监测数量"
+            android:textColor="#434952"
+            android:textSize="12dp"
+            />
+
+        <TextView
+            android:id="@+id/reportCountTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:text="正常上报"
+            android:textColor="@color/water_rz_color"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+</layout>

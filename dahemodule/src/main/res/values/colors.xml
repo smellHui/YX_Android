@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_main_color">#efefef</color>
+    <color name="main_color">#59abf1</color>
+    <!--文字颜色-->
+    <color name="color_white">#FFFFFF</color>
+
+
+    <color name="blue">#1785F8</color>
+
+    <!--综合监控模块相关颜色-->
+    <!--首页tablayout未选中字体颜色-->
+    <!--背景页面-->
+    <color name="text_color">#999999</color> <!--次要字体-->
+    <color name="color_333">#333333</color>
+    <!--字体颜色-->
+
+    <!--页面共用背景底色-->
+    <color name="background_common">#f4f5f7</color>
+    <color name="background_common_1">#f4f5f7</color>
+    <color name="common_blue">#1785F8</color>
+    <color name="reportitem">#eaeff9</color>
+
+    <color name="black_main">#000000</color>
+
+
+    <color name="linecolor">#f6f5f5</color>
+    <color name="checkColor">#0176da</color>
+    <color name="black">#000000</color>
+    <color name="white_my">#ffffff</color>
+    <color name="color_l">#979dac</color>
+    <color name="common_green">#4A9FA4</color>
+    <color name="common_red">#D43339</color>
+    <color name="common_blue_new">#374D59</color>
+    <color name="main_textcolor">#4c4c4c</color>
+    <color name="textcommon">#333333</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_green">#08af17</color>
+    <color name="nav_bg">#4CB8F6</color>
+    <color name="route_color_one">#FFA400</color>
+    <color name="route_color_two">#1485E9</color>
+    <color name="text_color_is">#434952</color>
+    <color name="text_map_bg">#6CADC8</color>
+
+    <!-- 网约车按钮颜色 -->
+    <color name="btn_blue">#3C5B9C</color>
+    <color name="circle_progress">#DF6B44</color>
+    <color name="net_btn_red">#FB5C35</color>
+    <color name="net_color_solidleft">#1485E9</color>
+    <color name="net_color_solidright">#F4F4F4</color>
+    <color name="net_head_border_color">#FF1bb7ff</color>
+    <color name="water_rz_color">#434952</color>
+
+    <color name="black_overlay">#66000000</color>
+
+    <color name="reservoir_monitor_blue">#4F80FA</color>
+    <color name="reservoir_monitor_green">#26D8B9</color>
+    <color name="reservoir_monitor_orange">#FAA15E</color>
+
+    <color name="background">#F1F1F1</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_AAAAAA">#AAAAAA</color>
+    <!--editText下划线颜色-->
+    <color name="chartreuse">#CCCCCC</color>
+    <color name="color_F3D760">#F3D760</color>
+    <color name="color_C7D0DC">#C7D0DC</color>
+    <color name="color_BDBDBD">#BDBDBD</color>
+    <color name="color_FFB61C">#FFB61C</color>
+    <color name="color_F3F5F8">#F3F5F8</color>
+    <color name="color_FBFBFD">#FBFBFD</color>
+    <color name="color_62C08D">#62C08D</color>
+    <color name="color_67b4ff">#67b4ff</color>
+    <color name="color_F8FAF9">#F8FAF9</color>
+    <color name="color_4FB17C">#4FB17C</color>
+    <color name="color_FFA200">#FFA200</color>
+    <color name="color_232A39">#232A39</color>
+    <color name="color_1785F8">#1785F8</color>
+    <color name="color_F0D660">#F0D660</color>
+    <color name="color_4FB97E">#4FB97E</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_9370E6">#9370E6</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_475162">#475162</color>
+    <color name="color_979EAB">#979EAB</color>
+    <color name="color_2F83F1">#2F83F1</color>
+    <color name="color_E99E00">#E99E00</color>
+    <color name="color_1DB87B">#1DB87B</color>
+    <color name="color_667EDD">#667EDD</color>
+    <color name="color_060720">#060720</color>
+    <color name="color_2BA5FF">#2BA5FF</color>
+    <color name="color_5C5C5D">#5C5C5D</color>
+    <color name="color_F3F5FA">#F3F5FA</color>
+    <color name="color_BFBFBF">#BFBFBF</color>
+    <color name="color_E8D7BE">#E8D7BE</color>
+    <color name="color_C7D8EC">#C7D8EC</color>
+    <color name="color_C6DCD0">#C6DCD0</color>
+
+    <color name="gradientPeriodicClouds_c1">#3453d1</color>
+    <color name="gradientPeriodicClouds_c2">#6d69ff</color>
+    <color name="gradientPeriodicClouds_c3">#cd47c6</color>
+
+    <array name="gradientPeriodicClouds">
+        <item>@color/color_E8D7BE</item>
+        <item>@color/color_E8D7BE</item>
+        <item>@color/color_E8D7BE</item>
+    </array>
+
+    <color name="gradientCloudy_c1">#62bff5</color>
+    <color name="gradientCloudy_c2">#61b3e5</color>
+    <color name="gradientCloudy_c3">#5d8fb2</color>
+
+    <array name="gradientCloudy">
+        <item>@color/color_C6DCD0</item>
+        <item>@color/color_C6DCD0</item>
+        <item>@color/color_C6DCD0</item>
+    </array>
+
+    <color name="gradientMostlyCloudy_c1">#51bbf5</color>
+    <color name="gradientMostlyCloudy_c2">#71c3ee</color>
+    <color name="gradientMostlyCloudy_c3">#f3e5d2</color>
+
+    <array name="gradientMostlyCloudy">
+        <item>@color/color_C7D8EC</item>
+        <item>@color/color_C7D8EC</item>
+        <item>@color/color_C7D8EC</item>
+    </array>
+
+    <color name="gradientPartlyCloudy_c1">#5b64be</color>
+    <color name="gradientPartlyCloudy_c2">#6084df</color>
+    <color name="gradientPartlyCloudy_c3">#64a2ff</color>
+
+    <array name="gradientPartlyCloudy">
+        <item>@color/gradientPartlyCloudy_c1</item>
+        <item>@color/gradientPartlyCloudy_c2</item>
+        <item>@color/gradientPartlyCloudy_c3</item>
+    </array>
+
+    <color name="gradientClear_c1">#6d4fbe</color>
+    <color name="gradientClear_c2">#6c56be</color>
+    <color name="gradientClear_c3">#a189f1</color>
+
+    <array name="gradientClear">
+        <item>@color/gradientClear_c1</item>
+        <item>@color/gradientClear_c2</item>
+        <item>@color/gradientClear_c3</item>
+    </array>
+</resources>

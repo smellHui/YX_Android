@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.yangj.dahemodule.weight.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    app:draggedItem="@id/drag_item"
+    app:rightItem="@id/right_view"
+    app:swipeDirection="left"
+    android:layout_height="72dp">
+
+    <LinearLayout
+        android:id="@+id/right_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_to_abnormal"
+            style="@style/text.patrol_control"
+            android:drawableTop="@mipmap/status_abnormal"
+            android:text="转异常"/>
+    </LinearLayout>
+
+    <include layout="@layout/item_patrol_control"/>
+</com.yangj.dahemodule.weight.SwipeLayout>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <View style="@style/LineH" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="水库名称"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <EditText
+                            android:id="@+id/et_reservoir_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:background="@null"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="请输入水库名称"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="所在地点"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <EditText
+                            android:id="@+id/et_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:background="@null"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="请输入所在地"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLength="50"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="总库容"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_capacity"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:background="@null"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="请输入库容"
+                                android:inputType="numberDecimal"
+                                android:lines="1"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="16sp"
+                             />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="万m³" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="最大坝高"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_hdam"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:background="@null"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="请输入坝高"
+                                android:inputType="numberDecimal"
+                                android:lines="1"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="m" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="鉴定方式"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <RadioGroup
+                            android:id="@+id/rg"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/rb_0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="鉴定" />
+
+                            <RadioButton
+                                android:id="@+id/rb_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="认定" />
+                        </RadioGroup>
+
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="鉴定(认定)时间"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <TextView
+                            android:id="@+id/tv_identify_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="37dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@null"
+                            android:drawableRight="@drawable/s_right_down"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="请选择鉴定(认定)时间"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#5f6166"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="分析评价单位"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <EditText
+                            android:id="@+id/et_unit"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:background="@null"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="请输入单位名称"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="鉴定(认定)部门"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <EditText
+                            android:id="@+id/et_department"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:background="@null"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:hint="请输入部门"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="检查日期"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <TextView
+                            android:id="@+id/tv_inspect_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="37dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="@null"
+                            android:drawableRight="@drawable/s_right_down"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_vertical"
+                            android:hint="请选择检查日期"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="#5f6166"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="库水位"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_water_level"
+                                android:layout_width="wrap_content"
+                                android:layout_height="37dp"
+                                android:background="@null"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:hint="请输入水位"
+                                android:inputType="numberSigned|numberDecimal"
+                                android:lines="1"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textColor="@android:color/darker_gray"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:textSize="16sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="m" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="天气"
+                            android:textColor="#101010"
+                            android:textSize="16sp" />
+                        <!--android:background="@drawable/bg_search_edittext"-->
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:id="@+id/et_weather"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:background="@null"
+                            android:hint="请点击选择"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <View style="@style/LineH" />
+
+                    <LinearLayout
+                        android:id="@+id/rootSendLy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/bt_back"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:background="@drawable/bg_btn_green"
+                            android:text="还原"
+                            android:textColor="@color/color_white" />
+                        <Button
+                            android:id="@+id/bt_save"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginRight="30dp"
+                            android:background="@drawable/bg_btn_green"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="保存"
+                            android:textColor="@color/color_white" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

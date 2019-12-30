@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/background_common"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/qingdan_jingao"
+                android:drawablePadding="5dp"
+                android:text="发现问题清单"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f0f0f0"
+                android:orientation="horizontal">
+
+
+                <com.tepia.guangdong_module.amainguangdong.common.verticaltablayout.widget.VerticalTabLayout
+                    android:tag="tablayout2"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/height_vertical"
+                    android:background="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="10dp"
+                    android:visibility="visible"
+                    app:indicator_color="#e85e6c"
+                    app:indicator_corners="8dp"
+                    app:indicator_gravity="fill"
+                    app:tab_margin="5dp"
+                    app:tab_mode="scrollable" />
+
+
+                <android.support.v4.view.ViewPager
+                    android:visibility="gone"
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_vertical"
+                    android:background="#f0f0f0" />
+
+                <FrameLayout
+                    android:visibility="visible"
+                    android:id="@+id/fragment_container"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_vertical"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:drawableLeft="@drawable/qingdan_error"
+                android:drawablePadding="5dp"
+                android:text="核查的工程存在问题"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="@color/white_my">
+                <EditText
+                    android:hint="@string/hint5"
+                    android:scrollbars="vertical"
+                    android:padding="10dp"
+                    android:gravity="top|left"
+                    android:layout_margin="5dp"
+                    android:background="@color/white_my"
+                    android:id="@+id/hechaCotetTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v4.widget.NestedScrollView>
+
+
+            <include
+                android:id="@+id/common_save"
+                layout="@layout/common_save_layout"/>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

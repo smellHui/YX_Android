@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <!--数据库名称-->
+    <dbname value="skgjGD"></dbname>
+    <!--数据库版本-->
+    <version value="7"></version>
+
+    <list>
+        <!--离线实体-->
+
+        <mapping class="com.tepia.photo_picker.entity.CheckTaskPicturesBean"/>
+
+        <!--巡查app数据库表-->
+        <mapping class="com.tepia.guangdong_module.amainguangdong.model.xuncha.ReservoirBean"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.route.TaskBean"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.route.TaskItemBean"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.route.ImageInfoBean"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.route.BizPlanInfoBean"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.route.RoutepointDataBean"/>
+
+
+
+        <mapping class="com.tepia.guangdong_module.amainguangdong.model.xuncha.DangerBean"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.model.xuncha.RouteListBean"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.model.xuncha.RoutePosition"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.model.xuncha.DataBeanOflistReservoirRoute"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.model.xuncha.SpecialNoticeBean"/>
+
+
+        <mapping class="com.yangj.dahemodule.model.main.Route"/>
+        <mapping class="com.yangj.dahemodule.model.main.Omltem"/>
+        <mapping class="com.yangj.dahemodule.model.main.ReservoirStructure"/>
+        <mapping class="com.tepia.guangdong_module.amainguangdong.model.DangerousPosition"/>
+
+<!--        <mapping class="com.yangj.dahemodule.model.patrol.PatrolProblemBean"/>-->
+
+    </list>
+</litepal>

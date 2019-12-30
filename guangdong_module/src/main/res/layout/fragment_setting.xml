@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_common"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/s_bg"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/imageFy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/headIv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:src="@drawable/s_head" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+
+            android:layout_toRightOf="@+id/imageFy"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/userTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="--"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+
+                />
+
+            <TextView
+                android:id="@+id/zhizeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/s_yuanjiao"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="--"
+                android:textColor="#a7cef8"
+                android:textSize="12sp"
+
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.tepia.guangdong_module.amainguangdong.common.MySettingView
+        android:id="@+id/downMv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp" />
+
+    <com.tepia.guangdong_module.amainguangdong.common.MySettingView
+        android:id="@+id/offlineMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp" />
+
+    <com.tepia.guangdong_module.amainguangdong.common.MySettingView
+        android:id="@+id/settingMv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" />
+
+    <com.tepia.guangdong_module.amainguangdong.common.MySettingView
+        android:id="@+id/loginOutMv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="5dp" />
+
+
+
+
+</LinearLayout>

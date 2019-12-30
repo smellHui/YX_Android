@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.guangdong_module">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 见网址说明http://unclechen.github.io/2016/03/05/Android6.0%E8%BF%90%E8%A1%8C%E6%97%B6%E6%9D%83%E9%99%90%E7%AE%80%E4%BB%8B/ -->
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 程序可以读取设备外部存储空间 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" /> <!-- 改变网络状态如是否能联网 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" /> <!-- 允许读写系统设置项 -->
+    <!-- <uses-permission android:name="android.permission.WRITE_SETTINGS" /> -->
+    <!-- 显示系统窗口 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 获取设备信息 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 针对android O申请前台服务权限 -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.tepia.guangdong_module.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.SplashOfGDActivity"
+            android:configChanges="orientation|screenSize|uiMode|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 登录页 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.LoginOfGDActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.file.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_gd" />
+        </provider> <!-- 缩略图 -->
+        <activity android:name="com.bilibili.boxing_impl.ui.BoxingActivity" /> <!-- 预览图 -->
+        <activity android:name="com.bilibili.boxing_impl.ui.BoxingViewActivity" /> <!-- 图片添加 -->
+        <activity
+            android:name="com.tepia.photo_picker.PhotoPickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.AppCompat.NoActionBar" /> <!-- 图片查看 -->
+        <activity
+            android:name="com.tepia.photo_picker.PhotoPagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.AppCompat.NoActionBar" /> <!-- 蒲公英 -->
+        <meta-data
+            android:name="PGYER_APPID"
+            android:value="be910282ca1cc6eab0249ff47d74b765" /> <!-- 关于我们 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.AboutUsActivity"
+            android:screenOrientation="portrait" /> <!-- 设置 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.VersionActivity"
+            android:screenOrientation="portrait" /> <!-- 切换水库/离线数据包 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.ChoiceReservoirActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.ChangeReservoirActivity"
+            android:screenOrientation="portrait" /> <!-- 开始巡查 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.StartInspectionActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" /> <!-- 险情 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.DangerReportActivity"
+            android:screenOrientation="portrait" /> <!-- 隐患 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.TroubleRecordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" /> <!-- 天气 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.weatherforecast.WeatherForecastActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.DownLoadActivity"
+            android:screenOrientation="portrait" /> <!-- 离线地图包管理 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.OfflineMapListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.RainDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.WaterRegimeDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.ImageDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.TyphoonRouteActivity"
+            android:screenOrientation="portrait" /> <!-- 水库信息列表 -->
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.ReserviorSearchListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.ReservoirRegimenActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged" />
+        <activity android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.ijkplayer.IjkplayerActivity"/>
+        <!--视频-->
+        <activity android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.VedioHtmlActivity"
+            android:screenOrientation="portrait"
+            android:hardwareAccelerated="true"
+            />
+        <!--实时监测-->
+        <activity android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.AreaReservoirCountActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.RainfallStatisticsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"/>
+        <activity android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.SeepageAnomalousActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"/>
+        <activity android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.OffLineMapDownLoadActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"/>
+        <activity
+            android:name="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.TokenActivity"
+            android:launchMode="singleTop"
+            android:theme="@style/TranslucentFullScreenTheme" />
+        <!--
+       高德地图key
+       新包名decb73b7a4edbca233b108da375d4eb9
+        -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="140f6b9bd3b6dd76555e5efdb6fb9223" />
+
+        <service
+            android:name="com.example.gaodelibrary.GaodeLibraryService"
+            android:enabled="true"
+            android:exported="false" />
+        <service android:name="com.amap.api.location.APSService" />
+        <service
+            android:name="com.taobao.sophix.aidl.DownloadService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.taobao.hotfix.action" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.ixuea.android.downloader.DownloadService">
+            <intent-filter>
+                <action android:name="com.ixuea.android.downloader.DOWNLOAD_SERVICE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

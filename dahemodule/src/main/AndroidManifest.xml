@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yangj.dahemodule">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:launchMode="singleTask"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".activity.OperatesActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.DangerReportListActivity" />
+        <activity android:name=".activity.VersionActivity" />
+        <activity android:name=".activity.DangerReportDetailActivity" />
+        <activity android:name=".activity.MyDealActivity" />
+        <activity android:name=".activity.OperatesForJsActivity" />
+        <activity android:name=".activity.ScanActivity" />
+        <activity android:name=".activity.WebActivity" />
+        <activity android:name=".activity.patrol.PatrolMapControlActivity" />
+        <activity android:name=".activity.patrol.NoPathMapControlActivity" />
+        <activity android:name=".activity.patrol.PatrolFeedBackActivity" />
+        <activity android:name=".activity.patrol.PatrolRecordActivity" />
+        <activity android:name=".activity.patrol.PatrolNormalFeedActivity" />
+        <activity
+            android:name="com.tepia.photo_picker.PhotoPickerActivity"
+            android:screenOrientation="portrait" /> <!-- 图片查看 -->
+    </application>
+
+</manifest>

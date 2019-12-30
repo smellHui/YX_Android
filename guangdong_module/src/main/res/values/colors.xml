@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_main_color">#efefef</color>
+    <color name="main_color">#59abf1</color>
+    <!--文字颜色-->
+    <color name="color_white">#FFFFFF</color>
+
+    <!--综合监控模块相关颜色-->
+    <!--首页tablayout未选中字体颜色-->
+    <!--背景页面-->
+    <color name="text_color">#999999</color> <!--次要字体-->
+    <color name="color_333">#333333</color>
+    <!--字体颜色-->
+
+    <!--页面共用背景底色-->
+    <color name="background_common">#f4f5f7</color>
+    <color name="background_common_1">#f4f5f7</color>
+    <color name="common_blue">#1785F8</color>
+    <color name="reportitem">#eaeff9</color>
+
+    <color name="black_main">#000000</color>
+
+
+    <color name="linecolor">#f6f5f5</color>
+    <color name="checkColor">#0176da</color>
+    <color name="black">#000000</color>
+    <color name="white_my">#ffffff</color>
+    <color name="color_l">#979dac</color>
+    <color name="common_green">#4A9FA4</color>
+    <color name="common_red">#D43339</color>
+    <color name="common_blue_new">#374D59</color>
+    <color name="main_textcolor">#4c4c4c</color>
+    <color name="textcommon">#333333</color>
+    <color name="color_red">#FF0000</color>
+    <color name="color_green">#08af17</color>
+    <color name="nav_bg">#4CB8F6</color>
+    <color name="route_color_one">#FFA400</color>
+    <color name="route_color_two">#1485E9</color>
+    <color name="text_color_is">#434952</color>
+    <color name="text_map_bg">#6CADC8</color>
+
+    <!-- 网约车按钮颜色 -->
+    <color name="btn_blue">#3C5B9C</color>
+    <color name="net_background">#465163</color>
+    <color name="circle_progress">#DF6B44</color>
+    <color name="net_btn_red">#FB5C35</color>
+    <color name="net_color_solidleft">#1485E9</color>
+    <color name="net_color_solidright">#F4F4F4</color>
+    <color name="net_head_border_color">#FF1bb7ff</color>
+    <color name="water_rz_color">#434952</color>
+
+    <color name="black_overlay">#66000000</color>
+    
+    <color name="reservoir_monitor_blue">#4F80FA</color>
+    <color name="reservoir_monitor_green">#26D8B9</color>
+    <color name="reservoir_monitor_orange">#FAA15E</color>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout><data></data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/routRootLy"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white_my"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/padding_5"
+        android:paddingBottom="@dimen/padding_5">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+
+            android:layout_width="@dimen/img_16"
+            android:layout_height="@dimen/img_16"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/home_ic_xclx" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="巡查路线"
+            android:textColor="@color/textcommon"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_common_1" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/routeRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/startCheckTv"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/bg_bt_start_yunwei"
+        android:gravity="center"
+        android:letterSpacing="0.5"
+        android:text="开 始 巡 查"
+        android:textColor="@color/white_my"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+</layout>

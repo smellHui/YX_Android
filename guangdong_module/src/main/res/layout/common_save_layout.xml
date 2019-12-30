@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_shangbao_dialogbottom_selector"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/dp_l"
+        android:id="@+id/rootView"
+        android:paddingBottom="@dimen/dp_l">
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_l"
+            android:layout_weight="1"
+            android:background="@drawable/bg_bt_cancel_yunwei"
+            android:gravity="center"
+            android:text="返  回"
+            android:textColor="@color/color_l"
+            android:textSize="@dimen/sp_l" />
+
+        <Button
+            android:id="@+id/suerBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_l"
+            android:layout_weight="1"
+            android:background="@drawable/bg_bt_start_yunwei"
+            android:gravity="center"
+            android:text="上  报"
+            android:textColor="@color/white_my"
+            android:textSize="@dimen/sp_l" />
+    </LinearLayout>
+</layout>

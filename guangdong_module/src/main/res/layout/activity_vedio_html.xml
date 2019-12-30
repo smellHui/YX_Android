@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.tepia.guangdong_module.amainguangdong.xunchaview.activity.VedioHtmlActivity">
+
+    <include layout="@layout/toolbar"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:progressDrawable="@drawable/pg"
+        android:visibility="gone"
+
+        />
+    <FrameLayout
+        android:id="@+id/lo_real_time_water_level_storage_capacity"
+        android:layout_width="match_parent"
+        android:layout_height="228dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <WebView
+            android:id="@+id/wv_real_time_water_level_storage_capacity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_real_time_water_level_storage_capacity" />
+
+        <View
+            android:id="@+id/lo_real_time_water_level_storage_capacity1"
+            android:layout_width="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

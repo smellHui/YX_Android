@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margintop">10dp</dimen>
+    <dimen name="textsizeloginuser">16sp</dimen>
+    <dimen name="fixed_height_bottom_padding">5dp</dimen>
+    <dimen name="padding_detail">10dp</dimen>
+    <dimen name="text_detail">14sp</dimen>
+
+    <!--综合监控-基础信息相关字号-->
+    <!--详情页面距离底部的距离-->
+    <dimen name="common_title_1">18sp</dimen>
+    <dimen name="height_shuandmian">60dp</dimen>
+    <dimen name="dp_l">10dp</dimen>
+    <dimen name="sp_l">16sp</dimen>
+    <dimen name="height_vertical">220dp</dimen>
+    <dimen name="hellocharsize">16sp</dimen>
+    <dimen name="sizeoflabel">20dp</dimen>
+    <dimen name="radiosize">12sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="autodimen_setting">15dp</dimen>
+    <dimen name="common_meter_20">20sp</dimen>
+    <dimen name="common_meter_14">14sp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="img_16">16dp</dimen>
+    <dimen name="marin_10">10dp</dimen>
+    <dimen name="base_river_left">12sp</dimen>
+
+</resources>

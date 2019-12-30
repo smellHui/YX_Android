@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text.15_979EAB"
+                android:text="巡查时间:" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                style="@style/text.16_232A39"
+                android:layout_marginLeft="8dp"
+                tools:text="00:00:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/text.15_979EAB"
+                android:text="异常项:" />
+
+            <TextView
+                android:id="@+id/tv_abnormal_num"
+                style="@style/text.16_232A39"
+                android:layout_marginLeft="8dp"
+                tools:text="100s" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_end"
+            style="@style/btn.supervised_weight"
+            android:text="结束巡查" />
+
+        <Button
+            android:id="@+id/btn_upload"
+            style="@style/btn.yellow_weight"
+            android:layout_marginLeft="35dp"
+            android:text="问题上报" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout><data></data>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white_my"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/icon_worker_head_default" />
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:text="填写险情描述"
+            android:textColor="@color/textcommon"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_common_1" />
+
+    <LinearLayout
+        android:id="@+id/positionNameLy"
+        android:padding="13dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="险情部位"
+            android:textColor="@color/textcommon"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:hint="请选择"
+            android:id="@+id/selectTv"
+            android:gravity="right"
+            android:drawableRight="@drawable/xqms_icon_choice"
+            android:drawablePadding="5dp"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_common_1" />
+    <LinearLayout
+        android:padding="13dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/yichangTitleTv"
+            android:text="险情描述"
+            android:textColor="@color/textcommon"
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/desEt"
+            android:scrollbars="vertical"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|top"
+            android:hint="请输入险情描述的详细信息"
+            android:textColorHint="#999999"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+    </LinearLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/background_common_1" />
+
+    <TextView
+        android:id="@+id/tianqiDesTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="--"
+        android:layout_margin="10dp"
+        android:textColor="#999999"
+        android:textSize="12sp"
+        />
+
+</LinearLayout>
+</layout>

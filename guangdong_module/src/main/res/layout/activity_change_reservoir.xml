@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.esri.arcgisruntime.mapping.view.MapView
+                android:id="@+id/mapView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#4DFFFFFF"
+                android:paddingRight="5dp"
+                android:text="开启自动查找"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="65dp"
+                android:textColor="@color/common_blue"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/xczr_icon_back" />
+
+            <LinearLayout
+                android:layout_width="36dp"
+                android:layout_height="80dp"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/bg_ll_shape"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/zoomBtnIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="放大"
+                    android:src="@drawable/map_btn_zoomin" />
+
+                <ImageView
+                    android:id="@+id/zoomBtnOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="缩小"
+                    android:src="@drawable/map_btn_zoomout" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="切换离线地图"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <com.tepia.base.view.customScrollView.ScrollLayout
+            android:id="@+id/scroll_down_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:visibility="visible">
+
+            <LinearLayout
+                android:id="@+id/ll_list_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/color_white">
+
+                <LinearLayout
+                    android:id="@+id/ll_scroll_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/home_ic_qhsk" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="切换待巡查水库"
+                        android:textColor="#333333"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#DDDDDD" />
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/bg_check_change_reservoir_rg"
+                    android:checkedButton="@id/rb_0"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_0"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_check_change_reservoir_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="全部"
+                        android:textColor="@color/check_change_reservoir_textview"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#1485E9" />
+
+                    <RadioButton
+                        android:id="@+id/rb_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_check_change_reservoir_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="5km内"
+                        android:textColor="@color/check_change_reservoir_textview"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#1485E9" />
+
+                    <RadioButton
+                        android:id="@+id/rb_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_check_change_reservoir_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="10km内"
+                        android:textColor="@color/check_change_reservoir_textview"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#1485E9" />
+
+                    <RadioButton
+                        android:id="@+id/rb_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_check_change_reservoir_radio"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="待巡查"
+                        android:textColor="@color/check_change_reservoir_textview"
+                        android:textSize="15sp" />
+                </RadioGroup>
+
+                <com.tepia.base.view.customScrollView.ContentRecyclerView
+                    android:id="@+id/rv_select_reservoir"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_foot"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="点击或上滑打开列表" />
+        </com.tepia.base.view.customScrollView.ScrollLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

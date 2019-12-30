@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="签字区:"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_sign_view"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="1dp">
+            <com.tepia.base.view.LinePathView
+                android:id="@+id/path_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <Button
+                android:id="@+id/bt_clean"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="清 除"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_bt_start_yunwei"
+                android:textColor="@color/color_white"/>
+
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:text="保 存"
+                android:background="@drawable/bg_bt_start_yunwei"
+                android:textColor="@color/color_white"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已签:"
+            android:textColor="#000000"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_sign"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/dp_l"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:paddingBottom="@dimen/dp_l">
+            <Button
+                android:id="@+id/bt_submit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_l"
+                android:layout_weight="1"
+                android:background="@drawable/bg_bt_start_yunwei"
+                android:gravity="center"
+                android:text="提  交"
+                android:textColor="@color/white_my"
+                android:textSize="@dimen/sp_l" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

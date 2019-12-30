@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_common"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/qingdan_jingao"
+                android:layout_toLeftOf="@+id/tv_pos_title"
+                android:layout_toStartOf="@+id/tv_pos_title"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/tv_pos_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="核查准则"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f0f0f0"
+            android:orientation="horizontal">
+
+
+            <com.tepia.guangdong_module.amainguangdong.common.verticaltablayout.widget.VerticalTabLayout
+                android:tag="tablayout2"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/height_vertical"
+                android:background="#ffffff"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="visible"
+                app:indicator_color="@color/checkColor"
+                app:indicator_corners="8dp"
+                app:indicator_gravity="fill"
+                app:tab_margin="5dp"
+                app:tab_mode="scrollable" />
+
+            <FrameLayout
+                android:visibility="visible"
+                android:id="@+id/fragment_container"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/height_vertical"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/qingdan_error"
+                android:layout_toLeftOf="@+id/tv_post_title_two"
+                android:layout_toStartOf="@+id/tv_post_title_two"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"/>
+            <TextView
+                android:id="@+id/tv_post_title_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="鉴定或认定的工程存在问题"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:layout_centerInParent="true"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/color_white"
+            >
+            <EditText
+                android:scrollbars="vertical"
+
+                android:id="@+id/et_executeResultDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="top"
+                android:hint="@string/hint3"
+
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                />
+        </android.support.v4.widget.NestedScrollView>
+
+        <LinearLayout
+            android:id="@+id/rootSendLv"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/bg_btn_green"
+                android:text="清空"
+                android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/bt_save"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/bg_btn_green"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="保存"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="ExtraTranslation">
+    <string name="main_name">广东</string>
+    <!-- 登录页面 -->
+    <string name="text_login_bt_tip">登 录</string>
+    <!--任务列表页-->
+
+    <!-- 任务详情页 -->
+    <!-- 任务处理页 -->
+    <string name="text_task_deal_desc_hint">请输入详细描述</string>
+    <string name="text_task_deal_pre_item_tip">上一项</string>
+    <string name="text_task_deal_next_item_tip">保存并下一项</string>
+    <string name="text_task_deal_up_image_bj_before_tip">保洁前</string>
+    <string name="text_task_deal_up_image_bj_after_tip">保洁后</string>
+
+    <!-- 等待窗提示语 -->
+    <string name="data_loading">数据加载中...</string>
+
+    <string name="hintstr">请输入用户名</string>
+    <string name="hintps">请输入密码</string>
+    <!--我的页面-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="design_company_name">北京太比雅科技股份有限公司</string>
+
+
+    <!--修改密码-->
+
+
+    <!--水质站-->
+
+
+    <!--时间选择器相关-->
+
+    <!--语音助手页面-->
+
+    <!--LHotelEntityAdapter中item setTag的key-->
+
+
+    <!--四信相关-->
+    <string name="contentproblemshow">--</string>
+    <string name="logo_title">广东省\n水库巡查app</string>
+    <string name="hint1">请输入建议原因\n\n\n\n\n</string>
+    <string name="hint2">请输入详细信息\n\n\n\n\n\n</string>
+    <string name="hint3">请填写问题(必填)\n\n\n\n\n\n</string>
+    <string name="hint4">请填写问题(必填)\n\n\n\n\n\n</string>
+    <string name="hint5">请输入内容\n\n\n\n\n\n</string>
+    <string name="hint6">备注\n\n\n\n\n\n\n\n\n</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">首页</string>
+    <string name="title_dashboard">巡查记录</string>
+    <string name="title_notifications">我的</string>
+    <string name="exit_message">是否确定退出登录？</string>
+
+
+    <string name="setting_setting">设置</string>
+    <string name="setting_v_suggestion">意见反馈</string>
+    <string name="setting_v_curversion">当前版本</string>
+    <string name="setting_v_about">关于我们</string>
+    <string name="setting_v_content">请输入遇到的问题或意见</string>
+    <string name="setting_v_add">添加图片说明</string>
+    <string name="setting_v_teltitle">联系电话</string>
+    <string name="setting_v_tel">选填，便于我们联系您</string>
+    <string name="setting_v_count">400</string>
+    <string name="setting_v_ziliao">个人信息</string>
+    <string name="setting_v_remind">消息提醒</string>
+    <string name="text_back">返回</string>
+
+    <!--修改密码-->
+    <string name="text_old_password_tip">原密码</string>
+    <string name="text_new_password_tip">新密码</string>
+    <string name="text_new_password_again_tip">再次输入</string>
+    <string name="text_old_password_et_tip">请输入原密码</string>
+    <string name="text_new_password_et_tip">请输入新密码</string>
+    <string name="text_new_password_again_et_tip">请再次输入新密码</string>
+    <string name="contentstr">土石坝>坝体\n近坝水面出现冒泡、旋涡</string>
+    <string name="reportstr">巡查已完成,\n待上报</string>
+    <string name="data_fromnet">正在通过网络获取数据...</string>
+    <!--ijkPlayer-->
+    <string name="N_A">N/A</string>
+    <string name="close">Close</string>
+    <string name="exit">Exit</string>
+    <string name="sample">Sample</string>
+    <string name="recent">Recent</string>
+    <string name="settings">Settings</string>
+    <string name="tracks">Tracks</string>
+    <string name="toggle_player">Player</string>
+    <string name="toggle_render">Render</string>
+    <string name="toggle_ratio">Scale</string>
+    <string name="show_info">Info</string>
+    <string name="vdec">vdec</string>
+    <string name="fps">fps</string>
+    <string name="v_cache">v-cache</string>
+    <string name="a_cache">a-cache</string>
+    <string name="load_cost">load-cost</string>
+    <string name="seek_cost">seek_cost</string>
+    <string name="seek_load_cost">seek_load_cost</string>
+    <string name="tcp_speed">tcp_speed</string>
+    <string name="bit_rate">bit_rate</string>
+
+    <string name="media_information">Media Information</string>
+    <string name="mi_player">Player</string>
+    <string name="mi_media">Media</string>
+    <string name="mi_profile_level">Profile level</string>
+    <string name="mi_pixel_format">Pixel format</string>
+    <string name="mi_resolution">Resolution</string>
+    <string name="mi_length">Length</string>
+    <string name="mi_stream_fmt1">Stream #%d</string>
+    <string name="mi_type">Type</string>
+    <string name="mi_language">Language</string>
+    <string name="mi_codec">Codec</string>
+    <string name="mi_frame_rate">Frame rate</string>
+    <string name="mi_bit_rate">Bit rate</string>
+    <string name="mi_sample_rate">Sample rate</string>
+    <string name="mi_channels">Channels</string>
+    <string name="mi__selected_video_track">*</string>
+    <string name="mi__selected_audio_track">*</string>
+    <string name="mi__selected_subtitle_track">*</string>
+
+    <string name="TrackType_video">Video</string>
+    <string name="TrackType_audio">Audio</string>
+    <string name="TrackType_subtitle">Subtitle</string>
+    <string name="TrackType_timedtext">Timed text</string>
+    <string name="TrackType_metadata">Meta data</string>
+    <string name="TrackType_unknown">Unknown</string>
+
+    <string name="VideoView_error_text_invalid_progressive_playback">Invalid progressive playback</string>
+    <string name="VideoView_error_text_unknown">Unknown</string>
+    <string name="VideoView_error_button">OK</string>
+
+    <string name="VideoView_ar_aspect_fit_parent">Aspect / Fit parent</string>
+    <string name="VideoView_ar_aspect_fill_parent">Aspect / Fill parent</string>
+    <string name="VideoView_ar_aspect_wrap_content">Aspect / Wrap content</string>
+    <string name="VideoView_ar_match_parent">Free / Fill parent</string>
+    <string name="VideoView_ar_16_9_fit_parent">16:9 / Fit parent</string>
+    <string name="VideoView_ar_4_3_fit_parent">4:3 / Fit parent</string>
+
+    <string name="VideoView_render_none">Render: None</string>
+    <string name="VideoView_render_surface_view">Render: SurfaceView</string>
+    <string name="VideoView_render_texture_view">Render: TextureView</string>
+
+    <string name="VideoView_player_none">Player: None</string>
+    <string name="VideoView_player_AndroidMediaPlayer">Player: AndroidMediaPlayer</string>
+    <string name="VideoView_player_IjkMediaPlayer">Player: IjkMediaPlayer</string>
+    <string name="VideoView_player_IjkExoMediaPlayer">Player: IjkExoMediaPlayer</string>
+</resources>

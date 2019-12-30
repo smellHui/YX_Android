@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/tv_photo_num"
+        style="@style/text.12_475162"
+        tools:text="图片上传：" />
+
+    <TextView
+        android:id="@+id/tv_no_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="暂无图片"
+        android:textColor="@color/color_666666"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <com.yangj.dahemodule.view.SelectPhotoRecycleView
+        android:id="@+id/view_select_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

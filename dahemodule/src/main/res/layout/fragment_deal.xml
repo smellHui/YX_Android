@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_tab"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:background="@mipmap/bg_patrol"
+        android:gravity="center"
+        android:text="险情处置"
+        android:textColor="@color/white"
+        android:textSize="21sp" />
+
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="#ffffff"
+        android:paddingTop="8dp"
+        android:paddingBottom="14dp"
+        app:tl_iconVisible="false"
+        app:tl_indicator_color="#1785F8"
+        app:tl_indicator_gravity="BOTTOM"
+        app:tl_indicator_height="3dp"
+        app:tl_indicator_width="58dp"
+        app:tl_textBold="BOTH"
+        app:tl_textSelectColor="#1785F8"
+        app:tl_textUnselectColor="#97A2AE"
+        app:tl_textsize="14sp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

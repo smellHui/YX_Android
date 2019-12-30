@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rootLy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/serialTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="--"
+            android:textColor="#434952"
+            android:textSize="18dp" />
+
+        <!--<TextView
+            android:id="@+id/tv_reservoir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="挡水建筑物"
+            android:textColor="#434952"
+            android:textSize="12dp" />-->
+
+        <TextView
+            android:id="@+id/jinduTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--"
+            android:textColor="#434952"
+            android:textSize="18dp"
+            android:drawableRight="@drawable/s_right"
+            android:layout_marginRight="20dp"
+            android:drawablePadding="5dp"
+            />
+
+
+
+    </LinearLayout>
+</layout>

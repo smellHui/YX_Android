@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ll"
+        android:layout_alignBottom="@+id/ll"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_bottom_corner" />
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="27dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_type"
+                style="@style/text.15_000000"
+                android:layout_weight="1"
+                android:drawableLeft="@mipmap/icon_patrol_3"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:text="待反馈"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_report"
+                style="@style/text.supervised_time"
+                tools:text="上报人：王西西" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_created_time"
+            style="@style/text.12_475162"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:text="反馈时间：2018/09/09" />
+
+        <TextView
+            style="@style/text.12_475162"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="8dp"
+            android:text="审核意见：" />
+
+        <EditText
+            android:id="@+id/et_content"
+            style="@style/input_edit_text"
+            android:layout_marginLeft="28dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_pass"
+                style="@style/btn.supervised_weight"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="通过" />
+
+            <Button
+                android:id="@+id/btn_back"
+                style="@style/btn.yellow_weight"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="退回" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
+

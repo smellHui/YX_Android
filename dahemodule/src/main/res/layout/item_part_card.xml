@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="250dp"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/ll_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/patrol_blue"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_route_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="土石坝/溢洪道"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:id="@+id/tv_route_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="临近巡查点"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp_12" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        style="@style/text.12_060720"
+                        android:text="已巡查" />
+
+                    <TextView
+                        android:id="@+id/tv_has_patrol_num"
+                        style="@style/text.24_060720"
+                        android:layout_marginLeft="4dp"
+                        android:text="8" />
+
+                    <TextView
+                        style="@style/text.12_060720"
+                        android:layout_marginLeft="2dp"
+                        android:text="项" />
+
+                    <TextView
+                        style="@style/text.12_060720"
+                        android:layout_marginLeft="48dp"
+                        android:text="未巡查" />
+
+                    <TextView
+                        android:id="@+id/tv_not_patrol_num"
+                        style="@style/text.24_060720"
+                        android:layout_marginLeft="4dp"
+                        android:text="8" />
+
+                    <TextView
+                        style="@style/text.12_060720"
+                        android:layout_marginLeft="2dp"
+                        android:text="项" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/color_BFBFBF" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp">
+
+                <TextView
+                    style="@style/text.12_060720"
+                    android:text="正常" />
+
+                <TextView
+                    android:id="@+id/tv_normal_num"
+                    style="@style/text.24_2BA5FF"
+                    android:layout_marginLeft="4dp"
+                    android:text="8" />
+
+                <TextView
+                    style="@style/text.12_060720"
+                    android:layout_marginLeft="2dp"
+                    android:text="项" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="40dp">
+
+                <TextView
+                    style="@style/text.12_060720"
+                    android:text="异常" />
+
+                <TextView
+                    android:id="@+id/tv_abnormal_num"
+                    style="@style/text.24_BDBDBD"
+                    android:layout_marginLeft="4dp"
+                    android:text="8" />
+
+                <TextView
+                    style="@style/text.12_060720"
+                    android:layout_marginLeft="2dp"
+                    android:text="项" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

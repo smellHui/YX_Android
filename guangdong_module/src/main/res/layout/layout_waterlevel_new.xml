@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout><data></data>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/white_my"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:layout_width="@dimen/img_16"
+            android:layout_height="@dimen/img_16"
+            android:src="@drawable/home_ic_sw" />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水位"
+            android:textColor="@color/textcommon"
+            android:textSize="16sp"
+            />
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/background_common_1"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前水位"
+            android:textColor="@color/textcommon"
+            android:textSize="@dimen/common_meter_14"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/currentIv"
+                android:layout_marginLeft="0dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                 />
+            <TextView
+
+                android:id="@+id/currentTv"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textColor="@color/color_red"
+                android:textSize="@dimen/common_meter_14"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="汛限水位:"
+            android:textColor="@color/textcommon"
+            android:textSize="@dimen/common_meter_14"
+            />
+
+        <TextView
+            android:id="@+id/xunxianTv"
+
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/textcommon"
+            android:textSize="@dimen/common_meter_14"
+            />
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/desXunxian"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="距汛限水位:"
+            android:textColor="@color/textcommon"
+            android:textSize="@dimen/common_meter_14"
+            />
+
+        <TextView
+            android:id="@+id/juxunxianTv"
+
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="#FFA400"
+            android:textSize="@dimen/common_meter_14"
+            />
+
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="坝顶高程:"
+            android:textColor="@color/textcommon"
+            android:textSize="@dimen/common_meter_14"
+            />
+
+
+        <TextView
+            android:id="@+id/baDingGaoChengTv"
+
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--"
+            android:textColor="@color/textcommon"
+            android:textSize="@dimen/common_meter_14"
+            />
+
+
+
+    </LinearLayout>
+
+   <!-- <LinearLayout
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+
+
+
+    </LinearLayout>-->
+
+</LinearLayout>
+</layout>

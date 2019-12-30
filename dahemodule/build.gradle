@@ -1,0 +1,163 @@
+if (isModule.toBoolean()) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
+}
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    defaultConfig {
+        if (isModule.toBoolean()) {
+            applicationId "com.yangj.dahemodule"
+        }
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-vector-drawable:28.0.0'
+    configurations.all {
+        resolutionStrategy.force "com.android.support:support-annotations:$rootProject.supportLibraryVersion"
+        resolutionStrategy.force "com.android.support:support-v4:$rootProject.supportLibraryVersion"
+        resolutionStrategy.force "com.android.support:appcompat-v7:$rootProject.supportLibraryVersion"
+    }
+
+    implementation rootProject.ext.dependencies.appcompat
+    implementation rootProject.ext.dependencies.constraint
+    implementation rootProject.ext.dependencies.recyclerview
+    implementation rootProject.ext.dependencies.support
+    implementation rootProject.ext.dependencies.constraint
+    implementation rootProject.ext.dependencies.cardview
+    implementation rootProject.ext.dependencies.design
+
+    implementation rootProject.ext.dependencies.FlycoTabLayout
+    // json 解析.
+    implementation rootProject.ext.dependencies.gson
+    implementation rootProject.ext.dependencies.barlibrary
+    // 图片加载
+    implementation rootProject.ext.dependencies.glide
+
+    //突破64k
+    implementation rootProject.ext.dependencies.multidex
+    //logger
+    implementation rootProject.ext.dependencies.logger
+    //logger
+    implementation rootProject.ext.dependencies.litepal
+    //retrofit相关
+    implementation rootProject.ext.dependencies.okhttp3
+    implementation rootProject.ext.dependencies.retrofit
+    implementation rootProject.ext.dependencies.converter_gson
+    implementation rootProject.ext.dependencies.adapter_rxjava
+    //rx相关
+    implementation rootProject.ext.dependencies.rxandroid
+    implementation rootProject.ext.dependencies.rxjava
+
+    //权限管理
+    implementation rootProject.ext.dependencies.lovedise
+    //持久化
+//    implementation rootProject.ext.dependencies.franmontiel
+    implementation rootProject.ext.dependencies.interceptor
+
+    implementation rootProject.ext.dependencies.BaseRecyclerViewAdapterHelper
+//    implementation rootProject.ext.dependencies.MagicIndicator
+
+    implementation rootProject.ext.dependencies.jpinyin
+    implementation rootProject.ext.dependencies.Pgyer
+    implementation rootProject.ext.dependencies.Tiny
+
+    implementation rootProject.ext.dependencies.Arouter
+    annotationProcessor rootProject.ext.dependencies.Arouter_compiler
+
+    implementation project(':photopicker')
+    implementation project(':base')
+    implementation project(':picktime')
+    implementation project(':arcgismap')
+    implementation project(':guangdong_module')
+    implementation project(':gaodelibrary')
+//    implementation 'com.github.BLiYing:GaodeLiabrary:v2.0.0'
+
+
+    implementation rootProject.ext.dependencies.TimePickerDialog
+
+    implementation rootProject.ext.dependencies.fastjson
+
+    //状态栏
+    implementation rootProject.ext.dependencies.statusbaruitl
+//    implementation rootProject.ext.dependencies.EventBus
+    implementation rootProject.ext.dependencies.toast
+    implementation rootProject.ext.dependencies.expandablelayout
+//    implementation rootProject.ext.dependencies.highlight
+    implementation rootProject.ext.dependencies.hellochart
+    implementation rootProject.ext.dependencies.bottom_navigation_bar
+    implementation rootProject.ext.dependencies.pickerView
+
+    implementation 'com.bilibili:boxing-impl:1.0.4'
+
+    implementation rootProject.ext.dependencies.xpopup
+    implementation rootProject.ext.dependencies.BigImageViewPager
+
+    //arcgis
+    implementation rootProject.ext.dependencies.arcgisandroid
+    //下载
+    implementation rootProject.ext.dependencies.aria
+    annotationProcessor rootProject.ext.dependencies.ariaCompiler
+    implementation rootProject.ext.dependencies.MVVM2
+    implementation rootProject.ext.dependencies.MPAndroidChart
+    implementation rootProject.ext.dependencies.discreteScrollview
+    implementation rootProject.ext.dependencies.Banner
+    api rootProject.ext.dependencies.guava
+    implementation 'com.lxj:xpopup:1.8.10'
+    implementation 'org.greenrobot:eventbus:3.1.1'
+    implementation 'com.samigehi:loadingview:1.1'
+    implementation 'cn.bingoogolapple:bga-qrcode-zxing:1.3.7'
+
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    api 'com.just.agentweb:agentweb:4.1.2'
+}

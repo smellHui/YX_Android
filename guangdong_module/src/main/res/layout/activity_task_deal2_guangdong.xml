@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data></data>
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_common">
+
+        <LinearLayout
+            android:id="@+id/kbl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/toolbar" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#eaedef" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/bg_main_color" />
+
+            <LinearLayout
+                android:id="@+id/lo_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_my"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+
+                android:paddingBottom="10dp"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tv_pre"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_pre_item"
+                    android:gravity="center"
+                    android:text="@string/text_task_deal_pre_item_tip"
+                    android:textColor="@color/main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/numTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/padding_detail"
+                    android:layout_weight="0.5"
+                    android:gravity="center"
+                    android:text="0/0"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_detail" />
+
+                <TextView
+                    android:id="@+id/tv_save_and_next"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="@dimen/padding_detail"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_bt_next_item"
+                    android:gravity="center"
+                    android:text="@string/text_task_deal_next_item_tip"
+                    android:textColor="@color/white_my"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</layout>
