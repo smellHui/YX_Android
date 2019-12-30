@@ -228,6 +228,7 @@ public class PhotoSelectAdapter extends RecyclerView.Adapter<PhotoSelectAdapter.
 
 
     public static class PhotoViewHolder extends RecyclerView.ViewHolder {
+
         private ImageView ivPhoto;
         private ImageView vSelected;
 
